@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none ;
+    color:#fff;
+    transition:0.3s;
+}
+ul{
+    list-style:none;
+}
+img{
+    max-width: 100%;
+}
+body{
+    font-family: 'Lexend', sans-serif;
+    font-size:16px;
+    line-height:24px;
+    /* background-color:#4ea3e6; */
+}
+.container{
+    position: relative;
+    width: 455px;
+    margin:auto;
+}
+
+/* Nav-bar */
+.nav {
+    position: fixed;
+    z-index: 1;
+    background-color: #4e57e6;
+    overflow-x: hidden;
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-right: 20%;
+}
+
+.header-area{
+    /* padding:25px 0; */
+    transition: padding .3s;
+}
+
+.header-area.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    /* background-color: #202020; */
+    padding: 5px;
+}
+
+.header-area ul.nav-list li.nav-i:first-child {
+    margin-right: auto;
+}
+
+.header-area ul.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.header-area ul.nav-list li.nav-i{
+    margin: 0 15px;
+}
+
+.header-area ul.nav-list li.nav-i a.nav{
+    text-transform: capitalize;
+    display: block;
+}
+
+.header-area ul.nav-list li.nav-i a.nav.active{
+    color: #fed700;
+}
+
+.header-area ul.nav-list li.nav-i a.nav:hover{
+    color:#f1f1f1;
+    cursor: pointer;
+}
+
+.nav-title {
+    text-transform: uppercase;
+    color: #f1f1f1;
+    margin: 0;
+    /* padding: 25px; */
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 180px;
+    padding-right: 25px;
+    font-size: 40px;
+}
+
+.nav-tagline {
+    font-weight: 300;
+    color: #f1f1f1;
+    margin: 0;
+    /* padding: 25px; */
+    padding-top: 35px;
+    padding-bottom: 5px;
+    padding-left: 45px;
+    padding-right: 25px;
+    font-size: 25px;
+}
+
+/* Main */
+main {
+    padding: 160px 45px;
+    /* padding-left: 0%; */
+    text-align: center;
+}
+
+.image {
+    display: block;
+}
+
+main .overlay {
+    position: absolute;
+    bottom: 0;
+    height: 200px;
+    width: 250px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(61,79, 93);
+}
+
+main .container:hover .overlay {
+    opacity: 1;
+}
+
+main .text {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main .column {
+    display: flex;
+    margin-left: 5%;
+    margin-right: auto;
+    padding: 15px;
+}
+
+main .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+main .h4 {
+    text-transform: uppercase;
+    color: rgb(61,79, 93);
+}
+
+/* .form-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+} */
+
+form {
+    font-family: 'Latin Modern Math';
+}
